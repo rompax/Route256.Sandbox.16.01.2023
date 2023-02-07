@@ -1,0 +1,54 @@
+<html lang="ru">
+	<head>
+		<link rel="stylesheet" href="./css/ttypography.css" type="text/css" charset="utf-8">
+			<link rel="stylesheet" href="./css/problem-statement.css" type="text/css" charset="utf-8">
+				<link rel="stylesheet" href="./css/clear.css" type="text/css" charset="utf-8"/>
+				<!-- MathJax -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+    });
+    MathJax.Hub.Register.StartupHook("End", function () {
+        Codeforces.runMathJaxListeners();
+    });
+    </script>
+    <!-- /MathJax -->
+				<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+				</script>
+			</head>
+			<body>
+<div class="ttypography"><div class="problem-statement"><div class="header"><div class="title">E. Отчет (15 баллов)</div><div class="time-limit"><div class="property-title">ограничение по времени на тест</div>2 секунды<i class="icon-question-sign clickable-title" style="font-size: 0.8em; font-style: normal"
+   title="Это соревнование использует политику пересчёта ограничений по времени по языкам программирования.
+Система автоматически увеличивает ограничения по времени для некоторых языков в соответствии с множителями.
+Независимо от множителя языка, ограничение по времени не может превысить 30 секунд.
+Прочтите детали по ссылке ниже списка задач."></i></div><div class="memory-limit"><div class="property-title">ограничение по памяти на тест</div>512 мегабайт</div><div class="input-file"><div class="property-title">ввод</div>стандартный ввод</div><div class="output-file"><div class="property-title">вывод</div>стандартный вывод</div></div><div><p>Директор IT-корпорации оценивает эффективность работы сотрудников по различным показателям и критериям. Один из этих критериев сформулирован следующим образом: приступив к некоторому заданию, сотрудник должен завершить его, не переключаясь на другие задания.</p><p>Чтобы проверить сотрудников на соответствие этому критерию, директор потребовал от каждого сотрудника отчет о том, какие задания он выполнял в последние $$$n$$$ дней. Отчет — это последовательность из $$$n$$$ целых чисел $$$a_1, a_2, \dots, a_n$$$, где $$$a_i$$$ — идентификатор задания, которое сотрудник выполнял в $$$i$$$-й день.</p><p>Вам необходимо написать программу, проверяющую, соответствует ли сотрудник критерию по его отчету. Сотрудник соответствует этому критерию, если не существует такого задания $$$x$$$, которое выполнялось с перерывом (т. е. в некоторый день $$$i$$$ сотрудник выполнял задание $$$x$$$, в дни с $$$i+1$$$ по $$$j-1$$$ он занимался другими заданиями, а в день $$$j$$$ сотрудник продолжил выполнение задания $$$x$$$, при этом $$$j &gt; i + 1$$$). Иными словами, каждое задание, которое выполнял сотрудник, должно занимать один непрерывный отрезок дней.</p><p>Неполные решения этой задачи (например, недостаточно эффективные) могут быть оценены частичным баллом.</p></div><div class="input-specification"><div class="section-title">Входные данные</div><p>В первой строке задано одно целое число $$$t$$$ ($$$1 \le t \le 10$$$) — количество наборов входных данных.</p><p>Каждый набор входных данных состоит из двух строк. В первой строке задано одно целое число $$$n$$$ ($$$3 \le n \le 50000$$$). Во второй строке заданы $$$n$$$ целых чисел $$$a_1, a_2, \dots, a_n$$$ ($$$1 \le a_i \le n$$$) — отчет сотрудника.</p></div><div class="output-specification"><div class="section-title">Выходные данные</div><p>Для каждого набора входных данных выведите ответ на отдельной строке. Если отчет соответствует критерию, выведите <span class="tex-font-style-tt">YES</span>, иначе выведите <span class="tex-font-style-tt">NO</span>.</p></div><div class="sample-tests"><div class="section-title">Пример</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre>
+5
+5
+1 2 3 4 5
+4
+1 2 3 1
+8
+2 3 4 8 5 5 5 5
+5
+1 1 3 2 2
+5
+1 1 2 3 2
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre>
+YES
+NO
+YES
+YES
+NO
+</pre></div></div></div></div><p>  </p></div>
+</div>
+            <div id="footer">
+                <div>Codeforces (c) Copyright 2010-2023 Михаил Мирзаянов</div>
+                <div>Соревнования по программированию 2.0</div>
+                    <div style="margin-top: 25px;">
+                        На платформе
+                    </div>
+                    <div style="margin-top: 8px; padding-bottom: 20px;">
+                        <img style="margin-right: 1em; height: 60px;" src="./images/codeforces-logo-190x60.png" alt="Codeforces" title="Codeforces"/>
+                    </div>
+            </div>
+			</body>

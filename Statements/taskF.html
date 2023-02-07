@@ -1,0 +1,65 @@
+<html lang="ru">
+	<head>
+		<link rel="stylesheet" href="./css/ttypography.css" type="text/css" charset="utf-8">
+			<link rel="stylesheet" href="./css/problem-statement.css" type="text/css" charset="utf-8">
+				<link rel="stylesheet" href="./css/clear.css" type="text/css" charset="utf-8"/>
+				<!-- MathJax -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+    });
+    MathJax.Hub.Register.StartupHook("End", function () {
+        Codeforces.runMathJaxListeners();
+    });
+    </script>
+    <!-- /MathJax -->
+				<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+				</script>
+			</head>
+			<body>
+<div class="ttypography"><div class="problem-statement"><div class="header"><div class="title">F. Отрезки времени (20 баллов)</div><div class="time-limit"><div class="property-title">ограничение по времени на тест</div>2 секунды<i class="icon-question-sign clickable-title" style="font-size: 0.8em; font-style: normal"
+   title="Это соревнование использует политику пересчёта ограничений по времени по языкам программирования.
+Система автоматически увеличивает ограничения по времени для некоторых языков в соответствии с множителями.
+Независимо от множителя языка, ограничение по времени не может превысить 30 секунд.
+Прочтите детали по ссылке ниже списка задач."></i></div><div class="memory-limit"><div class="property-title">ограничение по памяти на тест</div>512 мегабайт</div><div class="input-file"><div class="property-title">ввод</div>стандартный ввод</div><div class="output-file"><div class="property-title">вывод</div>стандартный вывод</div></div><div><p>Вам задан набор отрезков времени. Каждый отрезок задан в формате <span class="tex-font-style-tt">HH:MM:SS-HH:MM:SS</span>, то есть сначала заданы часы, минуты и секунды левой границы отрезка, а затем часы, минуты и секунды правой границы.</p><p>Вам необходимо выполнить валидацию заданного набора отрезков времени. Иными словами, вам нужно проверить следующие условия:</p><ul> <li> часы, минуты и секунды заданы корректно (то есть часы находятся в промежутке от $$$0$$$ до $$$23$$$, а минуты и секунды — в промежутке от $$$0$$$ до $$$59$$$); </li><li> левая граница отрезка находится не позже его правой границы (но границы могут быть равны); </li><li> никакая пара отрезков не пересекается (даже в граничных моментах времени). </li></ul><p>Вам необходимо вывести <span class="tex-font-style-tt">YES</span>, если заданный набор отрезков времени проходит валидацию, и <span class="tex-font-style-tt">NO</span> в противном случае.</p><p>Вам необходимо ответить на $$$t$$$ независимых наборов тестовых данных.</p><p>Неполные решения этой задачи (например, недостаточно эффективные) могут быть оценены частичным баллом.</p></div><div class="input-specification"><div class="section-title">Входные данные</div><p>Первая строка входных данных содержит одно целое число $$$t$$$ ($$$1 \le t \le 10$$$) — количество наборов тестовых данных. Затем следуют $$$t$$$ наборов.</p><p>Первая строка набора содержит одно целое число $$$n$$$ ($$$1 \le n \le 2 \cdot 10^4$$$) — количество отрезков времени. В следующих $$$n$$$ строках следуют описания отрезков.</p><p>Описание отрезка времени задано в формате <span class="tex-font-style-tt">HH:MM:SS-HH:MM:SS</span>, где <span class="tex-font-style-tt">HH</span>, <span class="tex-font-style-tt">MM</span> и <span class="tex-font-style-tt">SS</span> — последовательности из двух цифр. Заметьте, что никаких пробелов в описании формата нет. Также ни в одном описании нет пробелов в начале и конце строки.</p></div><div class="output-specification"><div class="section-title">Выходные данные</div><p>Для каждого набора тестовых данных выведите ответ — <span class="tex-font-style-tt">YES</span>, если заданный набор отрезков времени проходит валидацию, и <span class="tex-font-style-tt">NO</span> в противном случае. Ответы выводите в порядке следования наборов во входных данных.</p></div><div class="sample-tests"><div class="section-title">Пример</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre>
+6
+1
+02:46:00-03:14:59
+2
+23:59:59-23:59:59
+00:00:00-23:59:58
+2
+23:59:58-23:59:59
+00:00:00-23:59:58
+2
+23:59:59-23:59:58
+00:00:00-23:59:57
+6
+17:53:39-20:20:02
+10:39:17-11:00:52
+08:42:47-09:02:14
+09:44:26-10:21:41
+00:46:17-02:07:19
+22:42:50-23:17:46
+1
+24:00:00-23:59:59
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre>
+YES
+YES
+NO
+NO
+YES
+NO
+</pre></div></div></div></div><p>  </p></div>
+</div>
+            <div id="footer">
+                <div>Codeforces (c) Copyright 2010-2023 Михаил Мирзаянов</div>
+                <div>Соревнования по программированию 2.0</div>
+                    <div style="margin-top: 25px;">
+                        На платформе
+                    </div>
+                    <div style="margin-top: 8px; padding-bottom: 20px;">
+                        <img style="margin-right: 1em; height: 60px;" src="./images/codeforces-logo-190x60.png" alt="Codeforces" title="Codeforces"/>
+                    </div>
+            </div>
+			</body>
